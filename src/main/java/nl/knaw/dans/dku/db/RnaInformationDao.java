@@ -31,4 +31,9 @@ public class RnaInformationDao {
         return List.of();
     }
 
+    public RnaInformation save(RnaInformation info) {
+        return null;
+        // TODO after fixing the DAO, uncomment this
+//        return super.persist(info):
+    }
 }

@@ -15,22 +15,21 @@
  */
 package nl.knaw.dans.dku.api;
 
-import org.hibernate.annotations.Immutable;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
 import java.io.Serializable;
 
-// add the org.hibernate.annotations.Immutable annotation
-// because this is a readonly database
-@Immutable
 public class RnaInformation implements Serializable {
 
     private String id;
     private String description;
     private String upi;
+    public RnaInformation(String id, String description) {
+        this.id = id;
+        this.description = description;
+    }
+
+    public RnaInformation() {
+
+    }
 
     public String getId() {
         return id;
